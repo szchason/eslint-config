@@ -1,0 +1,32 @@
+module.exports = {
+  env: {
+    es2021: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
+  plugins: ['import'],
+  rules: {
+    'import/no-unresolved': [ 'error', { commonjs: true, caseSensitive: true } ],
+    'import/named': 'error',
+    'import/default': 'error',
+    'import/namespace': 'off',
+    'import/no-self-import': 'error',
+    'import/no-webpack-loader-syntax': 'error',
+    'import/export': 'error',
+    'import/no-named-as-default': 'error',
+    'import/no-named-as-default-member': 'error',
+    'import/no-deprecated': 'off',
+    'import/no-mutable-exports': 'error',
+    'import/no-commonjs': 'off',
+    'import/no-amd': 'error',
+    'import/no-nodejs-modules': 'off',
+    'import/first': 'error',
+    'import/exports-last': 'error',
+    'import/imports-first': 'off',
+    'import/no-duplicates': 'error',
+    'import/no-namespace': 'off',
+    'import/newline-after-import': [ 'error', { count: 1 } ],
+  },
+};
