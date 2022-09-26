@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "only-allow": "^1.1.1"
+  }
+}
