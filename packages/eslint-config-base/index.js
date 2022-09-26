@@ -9,7 +9,7 @@ module.exports = {
     './rules/es6',
     './rules/imports',
   ],
-  rules:{
+  rules: {
 
-  }
-}
+  },
+};

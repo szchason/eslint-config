@@ -1,12 +1,41 @@
 {
   "name": "@szchason/eslint-config-react",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "JS ESLint config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "files": [
+    "rules",
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "javascript",
+    "styleguide",
+    "es2015",
+    "eslint-config-react",
+    "szchason"
+  ],
+  "author": "szchason",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szchason/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/szchason/eslint-config/issues"
+  },
+  "homepage": "https://github.com/szchason/eslint-config/tree/main/packages/eslint-config-react",
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0"
+  },
+  "devDependencies": {
+    "@szchason/eslint-config-base": "workspace:*",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
 }
