@@ -1,17 +1,28 @@
 {
   "name": "eslint-config",
   "private": true,
+  "packageManager": "pnpm@7.8.0",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "JS Eslint config",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "eslint": "eslint packages/**/*.js",
+    "lint-staged": "lint-staged"
   },
-  "keywords": [],
-  "author": "",
+  "lint-staged": {
+    "*.{js}": "npm run eslint"
+  },
+  "author": "szchason",
   "license": "MIT",
+  "engines": {
+    "node": ">=16.13.1"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.1.0",
     "eslint": "^8.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "only-allow": "^1.1.1"
   }
 }

@@ -1,14 +1,45 @@
 {
-  "name": "eslint-config-base",
+  "name": "@szchason/eslint-config-base",
   "version": "0.0.1-alpha.01",
   "description": "JS ESLint config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "exports": {
+    ".": "./index.js",
+    "./rules/es6": "./rules/es6.js",
+    "./rules/node": "./rules/node.js",
+    "./rules/style": "./rules/style.js",
+    "./rules/errors": "./rules/errors.js",
+    "./rules/imports": "./rules/imports.js",
+    "./rules/strict": "./rules/strict.js",
+    "./rules/variables": "./rules/variables.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "rules",
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide",
+    "es2015",
+    "szchason"
+  ],
+  "author": "szchason",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szchason/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/szchason/eslint-config/issues"
+  },
+  "homepage": "https://github.com/szchason/eslint-config/tree/main/packages/eslint-config-base",
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-plugin-import": "^2.26.0"
