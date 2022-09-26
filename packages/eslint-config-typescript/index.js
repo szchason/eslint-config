@@ -1,5 +1,7 @@
 module.exports = {
-  rules:{
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  rules: {
 
-  }
-}
+  },
+};
