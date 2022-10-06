@@ -38,7 +38,11 @@ module.exports = {
     'react/function-component-definition': [
       'error',
       {
-        namedComponents: [ 'function-declaration', 'function-expression' ],
+        namedComponents: [
+          'function-declaration',
+          'function-expression',
+          'arrow-function',
+        ],
         unnamedComponents: 'function-expression',
       },
     ],

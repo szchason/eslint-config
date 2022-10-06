@@ -1,6 +1,6 @@
 {
   "name": "@szchason/eslint-config-typescript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Typescript ESLint config",
   "main": "index.js",
   "scripts": {
