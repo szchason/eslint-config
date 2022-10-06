@@ -67,7 +67,12 @@ module.exports = {
     'react/no-this-in-sfc': 'error',
     'react/no-typos': 'error',
     'react/no-unescaped-entities': 'error',
-    'react/no-unknown-property': 'error',
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['styleName'],
+      },
+    ],
     'react/no-unsafe': 'off',
     'react/no-unstable-nested-components': 'error',
     'react/no-unused-class-component-methods': 'error',
@@ -101,7 +106,13 @@ module.exports = {
     ],
     'react/require-optimization': [ 'off', { allowDecorators: [] } ],
     'react/require-render-return': 'error',
-    'react/self-closing-comp': 'error',
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
     'react/sort-comp': [
       'error',
       {
@@ -182,7 +193,7 @@ module.exports = {
     ],
     'react/jsx-curly-spacing': [ 'error', { when: 'never', children: true } ],
     'react/jsx-equals-spacing': [ 'error', 'never' ],
-    'react/jsx-filename-extension': [ 'error', { extensions: ['.jsx'] } ],
+    'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx', '.tsx' ] } ],
     'react/jsx-first-prop-new-line': [ 'error', 'multiline-multiprop' ],
     'react/jsx-fragments': [ 'error', 'syntax' ],
     'react/jsx-handler-names': [

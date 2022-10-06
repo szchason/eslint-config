@@ -8,7 +8,6 @@ module.exports = {
         '*.ts',
         '*.mts',
         '*.cts',
-        '*.tsx',
       ],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'error',
@@ -18,12 +17,7 @@ module.exports = {
   ],
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': [ '.ts', '.tsx' ],
-    },
-    'import/resolver': {
-      typescript: {
-        project: './tsconfig.json',
-      },
+      '@typescript-eslint/parser': ['.ts'],
     },
   },
   rules: {
@@ -95,10 +89,8 @@ module.exports = {
     '@typescript-eslint/typedef': [
       'error',
       {
-        arrowParameter: true,
         memberVariableDeclaration: true,
         propertyDeclaration: true,
-        parameter: true,
       },
     ],
     '@typescript-eslint/unified-signatures': 'warn',
