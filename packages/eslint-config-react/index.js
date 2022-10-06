@@ -7,12 +7,12 @@ module.exports = {
     },
   },
   plugins: [
-    '@szchason/eslint-config-base',
     'react',
     'react-hooks',
     'jsx-a11y',
   ],
   'extends': [
+    '@szchason/eslint-config-base',
     './rules/react.js',
     './rules/react-a11y.js',
     './rules/react-hooks.js',
