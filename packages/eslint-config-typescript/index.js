@@ -44,7 +44,13 @@ module.exports = {
     '@typescript-eslint/no-duplicate-enum-values': 'error',
     '@typescript-eslint/no-explicit-any': 'off', // 不允许使用any
     'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': 'error',
+    '@typescript-eslint/no-extra-parens': [
+      'error',
+      'all',
+      {
+        ignoreJSX: 'all',
+      },
+    ],
     '@typescript-eslint/no-inferrable-types': [
       'error',
       {
